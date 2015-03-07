@@ -1,0 +1,70 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}HackIt Fresno{% endblock %}</title>
+    <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}" />
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="container">
+                <a href="{% url "index" %}">
+                    <img src="{% static "img/hackit-banner.jpg" %}" alt="HackIt Fresno logo" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url "index" %}">Home</a></li>
+                    <li><a href="{% url "rules" %}">Rules</a></li>
+                    <li><a href="{% url "prizes" %}">Prizes</a></li>
+                    <li><a href="http://bit.ly/fhn-coc">Code of Conduct</a></li>
+                    <li><a href="https://www.eventbrite.com/e/hackit-fresno-tickets-16003857970" class="register">Register @ Eventbrite</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://twitter.com/HackItFresno">
+                            <span class="fa fa-twitter fa-lg"></span>
+                            @HackItFresno
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <div class="container">
+            {# <hr /> #}
+
+            <p class="lead text-center">Presented with <span class="fa fa-heart"><span class="sr-only">love</span></span> by &hellip;</p>
+
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <a href="http://alacartesoftware.co/">
+                        <img src="{% static "img/alacarte.png" %}" alt="à la carte logo" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="http://bitwiseindustries.com/">
+                        <img src="{% static "img/bitwise.png" %}" alt="Bitwise Industries logo" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="http://fresnohacknight.com/">
+                        <img src="{% static "img/hacknight.png" %}" alt="Fresno Hack Night logo" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

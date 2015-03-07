@@ -1,0 +1,47 @@
+body {
+    background-color: #f5edd3;
+    color: #03324c;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+hr {
+    border-top-color: #fae596;
+}
+
+.img-responsive {
+    display: inline-block;
+}
+
+.light {
+    color: #9fc6cd;
+}
+
+.fa-heart {
+    color: #d91e25;
+}
+
+.fa-twitter {
+    color: #4099ff;
+}
+
+header .register {
+    color: #03324c !important;
+    font-weight: bold;
+}
+
+header .banner {
+    background-color: #9fc6cd;
+    text-align: center;
+}
+
+header .navbar-default {
+    background-color: #fff;
+}
+
+
+footer {
+    margin: 50px 0;
+}

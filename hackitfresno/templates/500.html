@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>OH SNAP!</h1>
+        <p class="lead">Some weird server thing just happened, and we can't show you this page.</p>
+
+        <p class="lead">Unlike our <a href="{% url "404" %}">404</a> page, we <em>know</em> this one's our fault. Blame <a href="https://twitter.com/dmpayton">the guy that made this site</a>.</a>
+
+        <p class="lead">You should probably just <a href="{% url "index" %}">go back to the homepage</a>.</p>
+    </div>
+</div>
+{% endblock %}
