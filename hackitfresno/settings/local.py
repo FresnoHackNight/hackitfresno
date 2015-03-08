@@ -4,8 +4,6 @@ DEBUG = TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['localhost']
 
-COMPRESS_ENABLED = False
-
 DJANGO_DEBUG_TOOLBAR = True
 if DJANGO_DEBUG_TOOLBAR:
     INSTALLED_APPS.append('debug_toolbar')
