@@ -41,6 +41,9 @@ header .navbar-default {
     background-color: #fff;
 }
 
+.navbar .navbar-toggle {
+    margin-left: 15px;
+}
 
 footer {
     margin: 50px 0;

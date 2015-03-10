@@ -1,6 +1,6 @@
 from .common import *
 
-DEBUG = TEMPLATE_DEBUG = False
+# DEBUG = TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['localhost']
 

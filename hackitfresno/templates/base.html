@@ -23,14 +23,28 @@
         </div>
         <nav class="navbar navbar-default">
             <div class="container">
-                <ul class="nav navbar-nav">
-                    <li><a href="{% url "index" %}">Home</a></li>
-                    <li><a href="{% url "rules" %}">Rules</a></li>
-                    <li><a href="{% url "prizes" %}">Prizes</a></li>
-                    <li><a href="http://bit.ly/fhn-coc">Code of Conduct</a></li>
-                    <li><a href="https://www.eventbrite.com/e/hackit-fresno-tickets-16003857970" class="register">Register @ Eventbrite</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="https://twitter.com/HackItFresno" class="btn btn-text navbar-btn visible-xs pull-right">
+                        <span class="fa fa-twitter fa-lg"></span>
+                        @HackItFresno
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-left" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url "index" %}">Home</a></li>
+                        <li><a href="{% url "rules" %}">Rules</a></li>
+                        <li><a href="{% url "prizes" %}">Prizes</a></li>
+                        <li><a href="http://bit.ly/fhn-coc">Code of Conduct</a></li>
+                        <li><a href="https://www.eventbrite.com/e/hackit-fresno-tickets-16003857970" class="register">Register @ Eventbrite</a></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-right hidden-xs">
                     <li>
                         <a href="https://twitter.com/HackItFresno">
                             <span class="fa fa-twitter fa-lg"></span>
@@ -53,17 +67,17 @@
             <p class="lead text-center">Presented with <span class="fa fa-heart"><span class="sr-only">love</span></span> by &hellip;</p>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-xs-4 text-center">
                     <a href="http://alacartesoftware.co/">
                         <img src="{% static "img/alacarte.png" %}" alt="à la carte logo" class="img-responsive" />
                     </a>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-xs-4 text-center">
                     <a href="http://bitwiseindustries.com/">
                         <img src="{% static "img/bitwise.png" %}" alt="Bitwise Industries logo" class="img-responsive" />
                     </a>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-xs-4 text-center">
                     <a href="http://fresnohacknight.com/">
                         <img src="{% static "img/hacknight.png" %}" alt="Fresno Hack Night logo" class="img-responsive" />
                     </a>
@@ -71,5 +85,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
