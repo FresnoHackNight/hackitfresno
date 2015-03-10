@@ -10,6 +10,7 @@
 
     <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' />
     <link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}" />
 </head>
 <body>
@@ -30,16 +31,22 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="https://twitter.com/HackItFresno" class="btn btn-text navbar-btn visible-xs pull-right">
-                        <span class="fa fa-twitter fa-lg"></span>
-                        @HackItFresno
-                    </a>
+                    <ul class="nav navbar-nav pull-right visible-xs" style="margin-right: 0;">
+                        <li>
+                            <a href="https://twitter.com/HackItFresno">
+                                <span class="fa fa-twitter fa-lg"></span>
+                                @HackItFresno
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="collapse navbar-collapse navbar-left" id="navbar">
                     <ul class="nav navbar-nav">
+                        {% comment %}
                         <li><a href="{% url "index" %}">Home</a></li>
                         <li><a href="{% url "rules" %}">Rules</a></li>
                         <li><a href="{% url "prizes" %}">Prizes</a></li>
+                        {% endcomment %}
                         <li><a href="http://bit.ly/fhn-coc">Code of Conduct</a></li>
                         <li><a href="https://www.eventbrite.com/e/hackit-fresno-tickets-16003857970" class="register">Register @ Eventbrite</a></li>
                     </ul>
