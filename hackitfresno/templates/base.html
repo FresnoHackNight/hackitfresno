@@ -42,12 +42,12 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-left" id="navbar">
                     <ul class="nav navbar-nav">
-                        {% comment %}
                         <li><a href="{% url "index" %}">Home</a></li>
+                        {% comment %}
                         <li><a href="{% url "rules" %}">Rules</a></li>
                         <li><a href="{% url "prizes" %}">Prizes</a></li>
                         {% endcomment %}
-                        <li><a href="http://bit.ly/fhn-coc">Code of Conduct</a></li>
+                        <li><a href="{% url "coc" %}">Code of Conduct</a></li>
                         <li><a href="https://www.eventbrite.com/e/hackit-fresno-tickets-16003857970" class="register">Register @ Eventbrite</a></li>
                     </ul>
                 </div>

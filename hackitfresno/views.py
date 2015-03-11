@@ -13,6 +13,10 @@ class Prizes(vanilla.TemplateView):
     template_name = 'pages/prizes.html'
 
 
+class CodeOfConduct(vanilla.TemplateView):
+    template_name = 'pages/coc.html'
+
+
 class Error404(vanilla.TemplateView):
     template_name = '404.html'
 
