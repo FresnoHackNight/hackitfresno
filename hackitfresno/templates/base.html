@@ -43,10 +43,8 @@
                 <div class="collapse navbar-collapse navbar-left" id="navbar">
                     <ul class="nav navbar-nav">
                         <li><a href="{% url "index" %}">Home</a></li>
-                        {% comment %}
                         <li><a href="{% url "rules" %}">Rules</a></li>
                         <li><a href="{% url "prizes" %}">Prizes</a></li>
-                        {% endcomment %}
                         <li><a href="{% url "coc" %}">Code of Conduct</a></li>
                         <li><a href="https://hackitfresno.eventbrite.com/" class="register">Register @ Eventbrite</a></li>
                     </ul>
@@ -71,7 +69,12 @@
         <div class="container">
             {# <hr /> #}
 
-            <p class="lead text-center">Presented with <span class="fa fa-heart"><span class="sr-only">love</span></span> by &hellip;</p>
+            <p class="lead text-center">
+                <span class="sr-only">Presented with love by &hellip;</span>
+                <span class="fa fa-fw fa-heart"></span>
+                <span class="fa fa-fw fa-heart"></span>
+                <span class="fa fa-fw fa-heart"></span>
+            </p>
 
             <div class="row">
                 <div class="col-xs-4 text-center">
